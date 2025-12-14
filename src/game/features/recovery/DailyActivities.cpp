@@ -204,7 +204,7 @@ namespace YimMenu::Features
 				}
 			}
 
-			auto streetDealerData = ScriptLocal(m_Thread, 256).At(12);
+			auto streetDealerData = ScriptLocal(m_Thread, 258).At(12);
 
 			if (!initialized)
 			{
@@ -795,8 +795,8 @@ namespace YimMenu::Features
 			{
 				for (int i = 0; i < 3; i++)
 				{
-					int combination = *ScriptLocal(thread, 144).At(22).At(i, 2).At(1).As<int*>();
-					*ScriptLocal(thread, 144).At(22).At(i, 2).As<float*>() = combination;
+					int combination = *ScriptLocal(thread, 146).At(22).At(i, 2).At(1).As<int*>();
+					*ScriptLocal(thread, 146).At(22).At(i, 2).As<float*>() = combination;
 				}
 			}
 		}

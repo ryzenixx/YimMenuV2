@@ -35,8 +35,8 @@ namespace YimMenu::Features
 				{
 					if (auto thread = Scripts::FindScriptThreadByID(id))
 					{
-						*ScriptLocal(thread, 521).As<int*>() = 1;
-						ScriptGlobal(2685690).At(4347).At(254).At(7, 2).As<TIMER*>()->Destroy();
+						*ScriptLocal(thread, 528).As<int*>() = 1;
+						ScriptGlobal(2686095).At(4357).At(260).At(7, 2).As<TIMER*>()->Destroy();
 					}
 				}
 				else
