@@ -296,7 +296,7 @@ namespace YimMenu
 						auto staticPropertyString = GetStaticPropertyName(propertyIterator, garageSlotIterator);
 						if (staticPropertyString.empty())
 						{
-							m_Garage = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(ScriptGlobal(1312440).At(propertyStatState, 1951).At(16));
+							m_Garage = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(*ScriptGlobal(1312440).At(propertyStatState, 1951).At(16).As<TEXT_LABEL_63*>());
 						}
 						else
 						{
